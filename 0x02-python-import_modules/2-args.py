@@ -12,4 +12,3 @@ if __name__ == "__main__":
         for i in range(arg_len-1):
             print("{}: ".format(i+1), end='')
             print(sys.argv[i+1])
-
