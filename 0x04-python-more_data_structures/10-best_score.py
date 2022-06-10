@@ -2,7 +2,7 @@
 def best_score(a_dictionary):
     if not a_dictionary:
         return None
-    dict_keys = list(a_dictionary.key())
+    dict_keys = list(a_dictionary.keys())
     max_key = ""
     max_score = a_dictionary[dict_keys[0]]
     for key in dict_keys:
