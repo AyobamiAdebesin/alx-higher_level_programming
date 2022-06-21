@@ -8,5 +8,6 @@ def safe_print_list_integers(my_list=[], x=0):
             pass
         else:
             element_count += 1
-            print()
-            return element_count()
+            
+    print()
+    return element_count()
