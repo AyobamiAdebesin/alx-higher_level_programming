@@ -43,7 +43,7 @@ class Square:
         A method to set the private instance variable 'size' to another value
         """
 
-        if type(self.value) != int:
+        if type(value) != int:
             raise TypeError("size must be an integer")
         elif self.__size < 0:
             raise ValueError("size must be >= 0")
