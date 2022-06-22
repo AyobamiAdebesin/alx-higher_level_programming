@@ -34,7 +34,6 @@ class Square:
     def size(self):
         """
         A method to retrieve the private instance variable 'size'
-        
         """
         return self.__size
 
@@ -42,14 +41,11 @@ class Square:
     def size(self, value):
         """
         A method to set the private instance variable 'size' to another value
-
         """
+
         if type(self.__size) != int:
             raise TypeError("size must be an integer")
         elif self.__size < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
-
-
-
