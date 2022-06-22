@@ -7,7 +7,7 @@ class Square:
     An empty class that defines a square
 
     """
-    def __init__(self):
+    def __init__(self, size):
         """
         Initializes the instance attributes of the class
 
@@ -17,4 +17,4 @@ class Square:
             None
 
         """
-        self.__size = 20
+        self.__size = size
