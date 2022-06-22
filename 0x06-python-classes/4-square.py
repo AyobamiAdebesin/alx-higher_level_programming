@@ -17,7 +17,12 @@ class Square:
             None
 
         """
-        self.__size = size
+        if type(size) != int:
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = size
 
     def area(self):
         """
@@ -25,6 +30,7 @@ class Square:
         """
         return (self.__size)**2
 
+    @property
     def size(self):
         """
         A method to retrieve the private instance variable 'size'
@@ -32,6 +38,7 @@ class Square:
         """
         return self.__size
 
+    @size.setter
     def size(self, value):
         """
         A method to set the private instance variable 'size' to another value
