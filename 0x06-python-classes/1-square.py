@@ -18,4 +18,3 @@ class Square:
 
         """
         self.__size = 20
-    pass
