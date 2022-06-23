@@ -15,6 +15,9 @@ class Square:
         self.position = position
 
     def __str__(self):
+        """
+        Define a print method for a square
+       """
         if self.__size != 0:
             [print("") for i in range(0, self.__position[1])]
         for i in range(0, self.__size):
