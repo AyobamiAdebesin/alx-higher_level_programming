@@ -50,4 +50,5 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ''
         else:
-            return '\n'.join(("#"*self.__width) for height in range(self.__height))
+            hash_width = "#"*self.__width
+            return '\n'.join((hash_width) for height in range(self.__height))
