@@ -6,7 +6,7 @@ class Rectangle:
     """A class that defines a Rectangle"""
 
     number_of_instances = 0
-    print_symbol = "3"
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """ A method that initializes the instance attributes"""
