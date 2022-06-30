@@ -5,12 +5,12 @@
 class Rectangle:
     """A class that defines a Rectangle"""
 
-    no_instance = 0
+    number_of_instances = 0
     def __init__(self, width=0, height=0):
         """ A method that initializes the instance attributes"""
         self.width = width
         self.height = height
-        Rectangle.no_instance += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -60,5 +60,5 @@ class Rectangle:
         return 'Rectangle({}, {})'.format(self.__width, self.__height)
 
     def __del__(self):
-        Rectangle.no_instance -= 1
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
