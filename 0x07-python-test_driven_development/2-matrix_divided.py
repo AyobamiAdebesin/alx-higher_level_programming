@@ -39,11 +39,12 @@ def matrix_divided(matrix, div):
         if not isinstance(matrix[i], list):
             raise TypeError(err_msg)
         for j in range(matrix[i]):
-            if not isinstance(matrix[i][j], int) and not isinstance (matrix[i][j], float):
+            if not isinstance(matrix[i][j], int) and not isinstance(
+                                                    matrix[i][j], float):
                 raise TypeError(err_msg)
-    
+
     len_first_row = len(matrix[0])
-    
+
     for i in range(1, len(matrix)):
         if len_first_row != 0 and len(matrix[i]) != len_first_row:
             raise TypeError(err_msg_2)
