@@ -33,19 +33,19 @@ def matrix_divided(matrix, div):
     err_msg_4 = "division by zero"
 
     if not isinstance(matrix, list):
-        raise TypeError(err_msg)
+        raise TypeError(err_msg_1)
 
-    for i in range(len(matrix)):
+    for i in range(len(matrix) - 1):
         if not isinstance(matrix[i], list):
-            raise TypeError(err_msg)
-        for j in range(matrix[i]):
+            raise TypeError(err_msg_1)
+        for j in range(len(matrix[i])):
             if not isinstance(matrix[i][j], int) and not isinstance(
                                                     matrix[i][j], float):
-                raise TypeError(err_msg)
+                raise TypeError(err_msg_1)
 
     len_first_row = len(matrix[0])
 
-    for i in range(1, len(matrix)):
+    for i in range(len(matrix) - 1):
         if len_first_row != 0 and len(matrix[i]) != len_first_row:
             raise TypeError(err_msg_2)
     if not isinstance(div, int) and not isinstance(div, float):
