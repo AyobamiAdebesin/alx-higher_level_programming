@@ -7,7 +7,7 @@ that inherited from the sepcified class
 """
 
 
-def inherited_from(obj, a_class):
+def inherits_from(obj, a_class):
     """
     A  function that checks if an object is an instance of a class
     """
