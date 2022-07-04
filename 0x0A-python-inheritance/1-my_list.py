@@ -10,9 +10,6 @@ class MyList(list):
 
     """
 
-    def __init__(self):
-        pass
-
     def print_sorted(self):
         sorted_list = self.copy()
         return (sorted_list.sort())
