@@ -14,4 +14,5 @@ class MyList(list):
         pass
 
     def print_sorted(self):
-        return(self.sort())
+        sorted_list = self.copy()
+        return (sorted_list.sort())
