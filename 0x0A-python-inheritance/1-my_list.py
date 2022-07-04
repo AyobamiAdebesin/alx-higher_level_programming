@@ -12,4 +12,4 @@ class MyList(list):
 
     def print_sorted(self):
         sorted_list = self.copy()
-        return (sorted_list.sort())
+        print(sorted_list.sort())
