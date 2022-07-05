@@ -5,7 +5,6 @@
 class MyInt(int):
     """
     A class that inherits from the int class, but guess what?
-    
     ............Its a rebel...........Ahahha!!!
     """
 
