@@ -10,9 +10,9 @@ class MyInt(int):
     """
 
     def __eq__(int1, int2):
-        if int1 != int2:
+        if int1 == int2:
             return False
 
     def __neq__(int1, int2):
-        if int1 == int2:
+        if int1 != int2:
             return True
