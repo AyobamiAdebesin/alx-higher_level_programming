@@ -8,10 +8,8 @@ class MyInt(int):
     ............Its a rebel...........Ahahha!!!
     """
 
-    def __eq__(int1, int2):
-        if int1 == int2:
-            return False
+    def __eq__(self, int2):
+        return int.__ne__(self, int2)
 
-    def __neq__(int1, int2):
-        if int1 != int2:
-            return True
+    def __ne__(self, int2):
+        return int.__eq__(self, int2)
