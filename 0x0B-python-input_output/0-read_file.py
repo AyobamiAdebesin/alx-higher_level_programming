@@ -5,4 +5,5 @@
 def read_file(filename=""):
     """A function that reads from file"""
     with open(filename, encoding="utf-8") as f:
-        lines = f.read()
+        for line in f.read():
+            print(line)
