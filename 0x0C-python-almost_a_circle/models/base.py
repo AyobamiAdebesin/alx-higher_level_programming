@@ -5,7 +5,7 @@
 class Base:
     """ A Base model class
 
-    Base: Rrpresents the "base" for all other classes
+    Base: Represents the "base" for all other classes
 
     Attributes:
         __nb_objects(int): The number of instances
@@ -20,7 +20,7 @@ class Base:
             id (int): The identity of the new Base.
         """
 
-        if id not None:
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
