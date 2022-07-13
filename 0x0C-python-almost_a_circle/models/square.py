@@ -20,4 +20,3 @@ class Square(Rectangle):
         """Return the print() and str() representation of a Square."""
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
-
