@@ -91,3 +91,9 @@ class Rectangle(Base):
             hash_width = "#"*self.width
             for i in range(self.height):
                 print(hash_width)
+    
+    def __str__(self):
+        """Return the print() and str() representation of the Rectangle."""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.x, self.y,
+                                                       self.width, self.height)
