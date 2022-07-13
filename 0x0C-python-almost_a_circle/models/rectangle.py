@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """This module contains a Rectangle class that inherits from Base class"""
 
-Base = __import__("base").Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -34,10 +34,6 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        if type(value) != int:
-            raise TypeError("width must be an integer")
-        if value <= 0:
-            raise ValueError("width must be > 0")
         self.__width = value
 
     @property
