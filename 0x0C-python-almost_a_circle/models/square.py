@@ -21,11 +21,3 @@ class Square(Rectangle):
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
 
-    def display(self):
-        """Print the Rectangle using the `#` character."""
-        if self.size == 0:
-            print("")
-        else:
-            hash_width = "#"*self.size
-            for i in range(self.size):
-                print(hash_width)
