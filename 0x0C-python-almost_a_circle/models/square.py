@@ -20,6 +20,7 @@ class Square(Rectangle):
         """Return the print() and str() representation of a Square."""
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
+
     def display(self):
         """Print the Rectangle using the `#` character."""
         if self.size == 0:
