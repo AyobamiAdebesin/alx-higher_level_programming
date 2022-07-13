@@ -87,10 +87,13 @@ class Rectangle(Base):
         """Print the Rectangle using the `#` character."""
         if self.width == 0 or self.height == 0:
             print("")
-        else:
-            hash_width = "#"*self.width
-            for i in range(self.height):
-                print(hash_width)
+            return
+
+        [print("") for y in range(self.y)]
+        for h in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="") for w in range(self.width)]
+            print("")
 
     def __str__(self):
         """Return the print() and str() representation of the Rectangle."""
