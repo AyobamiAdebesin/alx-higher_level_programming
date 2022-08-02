@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """This module serializes a class to a JSON object"""
-import json
 
 
 def class_to_json(obj):
