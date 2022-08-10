@@ -1,5 +1,5 @@
 -- Display city by temperature
-SELECT city, AVG(value) as avg_temp
+SELECT city, AVG(value) AS avg_temp
 FROM second_table
 WHERE month = 7 OR month = 8
 GROUP BY city
