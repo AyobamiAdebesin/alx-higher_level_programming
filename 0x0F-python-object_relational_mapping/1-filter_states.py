@@ -15,8 +15,7 @@ if __name__ == "__main__":
         'N%' ORDER BY states.id ASC"
     try:
         cur.execute(sql)
-        results = cur.fetchall()
-        for result in results:
+        for result in cur.fetchall():
             print(result)
     except Exception:
         print("Unable to fetch data from database")
