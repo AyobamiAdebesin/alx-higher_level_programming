@@ -17,7 +17,7 @@ if __name__ == "__main__":
     sql = " SELECT * FROM states ORDER BY states.id ASC"
     try:
         cur.execute(sql)
-        results = db.fetchall()
+        results = cur.fetchall()
         for result in results:
             print(result)
     except Exception:
