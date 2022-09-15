@@ -13,10 +13,14 @@ if __name__ == "__main__":
     cur = db.cursor()
     sql = "SELECT * FROM states WHERE states.name LIKE \
         'N%' ORDER BY states.id ASC"
-    try:
-        cur.execute(sql)
-        for result in cur.fetchall():
-            print(result)
-    except Exception:
-        print("Unable to fetch data from database")
+    cur.execute(sql)
+    for result in cur.fetchall():
+        print(result)
+
+    # try:
+    #     cur.execute(sql)
+    #     for result in cur.fetchall():
+    #         print(result)
+    # except Exception:
+    #     print("Unable to fetch data from database")
     db.close()
