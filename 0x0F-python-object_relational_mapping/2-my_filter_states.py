@@ -14,7 +14,7 @@ if __name__ == "__main__":
             db=sys.argv[3], host="localhost")
     cur = db.cursor()
 
-    sql = f"SELECT * FROM states WHERE states.name='{sys.argv[4]}'"
+    sql = "SELECT * FROM states WHERE states.name='{}'".format(sys.argv[4])
     cur.execute(sql)
     for result in cur.fetchall():
         print(result)
