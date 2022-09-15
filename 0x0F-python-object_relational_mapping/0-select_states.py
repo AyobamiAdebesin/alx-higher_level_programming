@@ -10,8 +10,8 @@ if __name__ == "__main__":
     import MySQLdb
 
     db = MySQLdb.connect(
-            user=sys.argv[0], passwd=sys.argv[1],
-            db=sys .argv[2], host="localhost")
+            user=sys.argv[1], passwd=sys.argv[2],
+            db=sys .argv[3], host="localhost")
     cur = db.cursor()
 
     sql = " SELECT * FROM states ORDER BY states.id ASC"
