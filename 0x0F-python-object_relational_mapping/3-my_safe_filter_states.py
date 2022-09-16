@@ -14,9 +14,8 @@ if __name__ == "__main__":
             db=sys.argv[3], host="localhost")
     cur = db.cursor()
 
-    sql = "SELECT * FROM states WHERE states.name LIKE '{:s}'\
-        ORDER BY states.id ASC".format(sys.argv[4])
-    cur.execute(sql)
+    cur.execute("SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC",
+                (argv[4],))
     for i in cur.fetchall():
         print(i)
     db.close()
