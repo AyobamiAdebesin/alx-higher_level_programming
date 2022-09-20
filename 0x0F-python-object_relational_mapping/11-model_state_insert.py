@@ -18,5 +18,4 @@ if __name__ == "__main__":
     new_state = State("Louisiana")
     session.add(new_state)
     session.commit()
-    for state in session.query(State).filter_by(State.name == "Louisiana"):
-        print(state.id)
+    print(new_state.id)
