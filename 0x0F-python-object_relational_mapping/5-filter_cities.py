@@ -20,5 +20,5 @@ if __name__ == "__main__":
         print(", ".join([state[1] for state in states]))
     except Exception:
         print("Unable to retrieve data from table")
-    
+
     db.close()
