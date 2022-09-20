@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A script that contains the class definition of a 
+A script that contains the class definition of a
 State and an instance of the declarative_base class
 """
 
@@ -9,6 +9,7 @@ from sqlalchemy import String, Column, Table, Integer, DateTime, Text, MetaData
 
 my_metadata = MetaData()
 Base = declarative_base(metadata=my_metadata)
+
 
 class State(Base):
     """
