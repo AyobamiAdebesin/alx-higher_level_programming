@@ -2,6 +2,7 @@
 
 let biggest = 0;
 let i;
+
 const arrayNumbers = [];
 
 for (i = 2; i < process.argv.length; i++) {
