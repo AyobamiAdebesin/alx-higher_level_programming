@@ -16,6 +16,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     # states = session.query(State).filter_by(State.name.like(%a%)).all()
+    # NOTE: This a more optimized code other than the one below
 
     for state in session.query(State).order_by(State.id):
         if "a" in state.name:
