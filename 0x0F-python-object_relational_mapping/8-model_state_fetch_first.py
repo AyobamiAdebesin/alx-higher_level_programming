@@ -15,6 +15,13 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
+    # states = session.query(State).order_by(State.id).all()
+    # for state in states:
+    #   if "a" in state.name:
+    #     print("f{state.id}: {state.name}")
+    #  NOTE: This approach is not effective enough as you don't need to query all objects
+    # from the database before extracting the first item
+      
     first_state = session.query(State).order_by(State.id).first()
     print(
         "Nothing" if not first_state else "{}: {}".format(
