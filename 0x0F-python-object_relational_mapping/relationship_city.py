@@ -6,10 +6,7 @@ Inherits from SQLAlchemy Base and links to the MySQL table cities.
 """
 
 from sqlalchemy import Column, ForeignKey, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-
-Base = declarative_base()
-
+from relationship_state import Base, State
 
 class City(Base):
     """Represents a city for a MySQL database.

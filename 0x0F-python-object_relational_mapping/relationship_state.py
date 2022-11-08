@@ -3,11 +3,12 @@
 Defines a State model.
 Inherits from SQLAlchemy Base and links to the MySQL table states.
 """
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
-from relationship_city import Base, City
 
+my_metadata = MetaData()
+Base = declarative_base(metadata=my_metadata)
 
 class State(Base):
     """Represents a state for a MySQL database.
@@ -21,4 +22,4 @@ class State(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
 
-    cities = relationship("City", backref="state", cascade="all, delete")
+    cities = relationship("City", backref="states", cascade="all, delete")
