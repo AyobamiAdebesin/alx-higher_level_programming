@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 
 import sqlalchemy
-import os, sys
+import os
+import sys
 from sqlalchemy.orm import sessionmaker
 from relationship_state import Base, State
 from relationship_city import City
 from sqlalchemy import create_engine
 
-#dialect+driver://username:password@localhost:port/database
+# dialect+driver://username:password@localhost:port/database
 
 if __name__ == "__main__":
     engine = create_engine(

@@ -8,6 +8,7 @@ Inherits from SQLAlchemy Base and links to the MySQL table cities.
 from sqlalchemy import Column, ForeignKey, Integer, String
 from relationship_state import Base, State
 
+
 class City(Base):
     """Represents a city for a MySQL database.
     Attributes:
