@@ -3,7 +3,7 @@
 import urllib.request
 
 if __name__ == "__main__":
-    with urllb.request.urlpen("https://intranet.hbtn.io/status") as response:
+    with urllib.request.urlpen("https://intranet.hbtn.io/status") as response:
         html = response.read()
         print("Body response:")
         print("\t- type: {}".format(type(html)))
