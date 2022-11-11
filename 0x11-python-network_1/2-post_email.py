@@ -11,7 +11,7 @@ if __name__ == "__main__":
     values = {"email": mail}
     data = urllib.parse.urlencode(values)
     data = data.encode('ascii')
-    req = urlllib.request.Request(url, data)
+    req = urllib.request.Request(url, data)
     with urllib.request.urlopen(req) as response:
         html = response.read().decode('utf-8')
         rint(html)
