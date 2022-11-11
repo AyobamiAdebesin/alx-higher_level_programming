@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" A Python script that sends a request to a URL and extract 
+""" A Python script that sends a request to a URL and extract
     information in the header of the response
 """
 import requests
