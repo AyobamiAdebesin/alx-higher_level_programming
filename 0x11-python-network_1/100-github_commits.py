@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """ A script that shows the last 10 commits of a user"""
-import requests
 import sys
+import requests
+
 
 if __name__ == "__main__":
-    repo_name = sys.argv[1]
-    user_name = sys.argv[2]
+    url = "https://api.github.com/repos/{}/{}/commits".format(
+        sys.argv[2], sys.argv[1])
 
-    res = requests.get("https://api.github.com/repos/{}/{}/commits\
-            ".format(user_name, repo_name))
-    commits = res.json()
+    r = requests.get(url)
+    commits = r.json()
     try:
         for i in range(10):
             print("{}: {}".format(
